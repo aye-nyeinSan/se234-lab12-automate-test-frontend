@@ -1,9 +1,9 @@
 version : '3.3'
 services:
   frontend:
-    image: 29ayenyeinsan/se234-lab12
+    image: 29ayenyeinsan/se234-lab12:latest
     ports:
-      - 6000:80
+      - 8000:80
   backend:
     image: dto80/se234-lab12
     ports: 
