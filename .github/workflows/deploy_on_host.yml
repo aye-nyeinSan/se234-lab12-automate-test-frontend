@@ -20,6 +20,13 @@ jobs:
             - name: prepare the docker-compose run  
               run: |
                     ls -l
+            - name: Build and push
+              uses: docker/build-push-action@v4
+              with: 
+                  context: .
+                  push: true
+                  tags: 29ayenyeinsan/se234-lab12:latest
+    
             - name: copy file via ssh password
               uses: appleboy/scp-action@v0.1.4
               with:
