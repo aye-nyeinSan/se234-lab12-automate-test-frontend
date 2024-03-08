@@ -1,4 +1,4 @@
-version : '3.3'
+version: '3.3'
 services:
   frontend:
     image: 29ayenyeinsan/se234-lab12:latest
@@ -7,8 +7,8 @@ services:
   backend:
     image: dto80/se234-lab12:latest
     ports: 
-     - 5001:8081
+      - 5001:8081
     volumes:
       - type: bind
-        source: "C:/Users/aye29/OneDrive/Desktop/652115502/Devops/se234-lab12-automate-test-frontend/public/data.xlsx"
+        source: "C:\\Users\\aye29\\OneDrive\\Desktop\\652115502\\Devops\\se234-lab12-automate-test-frontend\\public\\data.xlsx"
         target: /data
