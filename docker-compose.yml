@@ -5,6 +5,10 @@ services:
     ports:
       - 8000:80
   backend:
-    image: dto80/se234-lab12
+    image: dto80/se234-lab11:latest
     ports: 
-     - 5000:8080
+     - 5001:8081
+    volumes:
+      - type: bind
+        source: 'public/data.xlsx'
+        target: /data
